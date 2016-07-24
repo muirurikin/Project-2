@@ -1,3 +1,9 @@
+#expertise {
+    padding-bottom: 40px;
+}
+#process {
+    padding-bottom: 40px;
+}
 .pic {
    text-align: center;   
 }
@@ -40,7 +46,7 @@ form section
 */
 .cont{
     margin: auto;
-    width: 70%;
+    width: 60%;
     font-size: 3px;
 }
 
@@ -79,4 +85,7 @@ input, textarea{
 .form-btn{
     color: burlywood;
     background-color: black;
+}
+.last {
+    width: 100%;
 }
