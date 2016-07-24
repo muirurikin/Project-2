@@ -18,21 +18,21 @@
     <link rel="stylesheet" href="/assets/font-awesome-4.6.3/css/font-awesome.css">
     </head>
     <body>
-    <header>
+    <header class="kich">
     <img src="http://www.wndrmnt.com/img/logo.png" alt="WNDRMNT">
-    <nav>
-    <a href="work">WORK</a>
-    <a href="#expertise">EXPERTISE</a>
-    <a href="#process">PROCESS</a>
-    <a href="#contact">CONTACT</a>
+    <nav class="navi">
+    <a class="navi" href="#work">WORK</a>
+    <a class="navi" href="#expertise">EXPERTISE</a>
+    <a class="navi" href="#process">PROCESS</a>
+    <a class="navi" href="#contact">CONTACT</a>
     <i class="fa fa-facebook" aria-hidden="true"></i>
     <i class="fa fa-twitter" aria-hidden="true"></i>
     </nav>
-    <section>
+    <section class="kati">
         <img src="http://www.wndrmnt.com/img/logo_wordmark.png" alt="WNDRMNT">
-        <h3>We design, develop and deploy responsive websites.</h3>
-        <div class="butn">
-        <a class="btn">SAY HELLO</a><a class="btn">SEE OUR WORK</a>
+        <h3 class="mid">We design, develop and deploy responsive websites.</h3>
+        <div class="mid">
+            <a class="btn">SAY HELLO</a> <a class="btn">SEE OUR WORK</a>
         </div>
     </section>    
     </header>
@@ -81,17 +81,17 @@
 <!== end of Expertise ==>
 
 <!== Process ==>
-<section>
-<div class="row">
-    <div class="large-12 columns">
-      <h1>Process</h1>
+<section id="process">
+<h1>Process</h1>
       <div class="row">
         <div class="large-9 columns">
           <p>Our process is simple. By having an organized and crystal clear approach we can guarantee a smooth production from start to finish.</p>
         </div>
       </div>
- <img class="pic" src="http://picresize.com/images/tprocess_diagram.png?839556">
-      <div class="row">
+<section class="pic">
+ <img src="http://www.wndrmnt.com/img/process/process_diagram.png">
+</section>
+        <div class="row">
         <div class="large-4 columns"><img src="http://www.wndrmnt.com/img/process/icon_phase_1_design.png" alt="Our first process is to design.">
               <h6>PHASE I</h6>
               <h2>Design</h2>
@@ -108,9 +108,43 @@
             <p>Once development has been approved the final phase in the process is to deploy. We transfer the final product from staging to the production server and run a final checklist to ensure all criteria is met so the project can go live.</p>
         </div>
       </div>
-    </div>
-  </div>
 </section>
 <!-- end of Process -->
-    </body>
+<!==  contact==>
+ <section id= "contact" class="cont">
+          <div class="">
+              <div class="C-intro">
+                  <h1>WANT TO WORK WITH US <br> OR JUST SAY HELLO??</h1><br>
+                  
+                  <h5> Email : info@WNDRMNT.com</h5><br/>
+                  
+                  <h5>Tel : +254-714-556-778</h5><br>
+                  
+                  <h3>Feel free to leave your feedback</h3>
+              </div>
+
+              <form>
+                  <fieldset>
+                      <legend><h1>Contact Form</h1></legend>
+                  
+                  <label class=""><h3>Talk to us today</h3></label><br>
+                  <label>Your name</label><br>
+                  <input class="fw" type="text" placeholder="Full name" name="comment" ><br>
+                  
+                  <label>Gender:</label>
+                  <input type="radio" name="day" value="male"> Male
+                  <input type="radio" name="day" value="female"> Female <br>
+                  
+                  <label>E-mail</label><br>
+                  <input class="fw" type="email" placeholder="Email address" name="comment" ><br>
+                  
+                  <label>Leave Your Message Here</label><br>
+                      <textarea class="msg-box" rows="4" placeholder="Leave your Message here"></textarea><br>
+                  <input class="form-btn" type="submit" name="submit" value="Send">
+                      </fieldset>
+              </form>
+          </div>
+    </section>
+     
+ </body>
 </html>
