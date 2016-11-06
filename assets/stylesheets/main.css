@@ -86,3 +86,90 @@ input, textarea{
 .last {
     width: 100%;
 }
+/*
+===========
+Slider
+===========
+*/
+.slider-wrapper {
+  width: 100%;
+  max-height: 690px;
+  min-height: 500px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  outline: 1px solid black;
+  @media screen and (max-width: 1300px) {
+    max-width: 850px;
+  }
+  .slider-inner {
+    color: white;
+    background: white;
+    left: 0;
+    float: left;
+  }
+  .slider-item {
+    float: left;
+    position: relative;
+    max-height: 500px;
+    min-height: 500px;
+    transition: all .1s ease-in-out;
+
+    img {
+      display: none;
+    }
+    .slider-text {
+      position: absolute;
+      right: 17%;
+      top: 0;
+      color: black;
+      width: 20%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-top: 2px solid #ededed;
+      border-bottom: 2px solid #ededed;
+      text-align: left;
+      top: 50%;
+      transform: translateY(-50%);
+      @media screen and (max-width: 1300px) {
+        right: 8%;
+        width: 24%;
+      }
+      h4 {
+        color: #8a1861;
+        font-size: 18px;
+        line-height: 30px;
+        padding-bottom: 5px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      @media screen and (max-width: 850px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.slider-click {
+  padding: 10px;
+  background: white;
+  position: absolute;
+  top: 40%;
+  color: black;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.slider-left-click {
+  left: 0;
+}
+
+.slider-right-click {
+  right: 0;
+}
+
